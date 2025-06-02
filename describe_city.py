@@ -1,7 +1,9 @@
-# scores = [0, 1, 2, 3, 4, 5, 6]
-# New_scores = [["neither even nor odd", ["odd", "Even"][i%2==0]][i==0] for i in scores]
-# print(New_scores)
+def describe_city(city,country = 'India') :
+    print(f'{city} is situated in {country}')
 
-scores = [0, 1, 2, 3, 4, 5, 6]
-New_scores = [["neither even nor odd", ["odd", "Even"][i%2==0]][i!=0] for i in scores]
-print(New_scores)
+describe_city('Jaipur')
+
+describe_city('Jajpur')
+
+describe_city('London','England')
+
