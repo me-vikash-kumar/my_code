@@ -1,7 +1,7 @@
 '''Simple Calculator'''
 
-print('''
-     _____ _                 __                     
+print(r'''
+   _____ _                 __                     
   / ___/(_)___ ___  ____  / /__                   
   \__ \/ / __ `__ \/ __ \/ / _ \                  
  ___/ / / / / / / / /_/ / /  __/                  
@@ -24,7 +24,6 @@ def multiplication(a,b):
 def division(a,b):
     if b==0 :
         return  '\n***Cannot divide by zero***\n'
-        
     return f'Result of this division is {a/b}'
 
 
@@ -41,7 +40,13 @@ while True:
         4 for Division
         5 for Exit
               ''')
-    calculation_type=int(input('Enter your choice: '))
+    try:
+        calculation_type=int(input('Enter your choice: '))
+    except ValueError:
+        print('Invalid input. Please enter a number.')
+        input('press enter to continue...')
+        continue
+            
     if calculation_type == 5:
         break
     elif calculation_type == 1:      
@@ -69,6 +74,6 @@ while True:
         print(division(a,b))
         input('press enter to continue...')
     else:
-        print('Please provide a valid input')
+        print('Please provide a valid input e.g 1,2,3,4,5]')
         input('press enter to continue...')
-        
+
