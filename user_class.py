@@ -21,18 +21,20 @@ class user :
 
     def login_reset(self):
         self.login_attempts=0
-        
-ramesh=user('ramesh','tiwari','male','25','12-03-1995')
 
-ramesh.describe_user()
 
-ramesh.increment_login_attempts()
-ramesh.increment_login_attempts()
-ramesh.increment_login_attempts()
-ramesh.increment_login_attempts()
-ramesh.increment_login_attempts()
-print(ramesh.login_attempts)
+if __name__ == "__main__":       
+    ramesh=user('ramesh','tiwari','male','25','12-03-1995')
 
-ramesh.login_reset()
+    ramesh.describe_user()
 
-print(ramesh.login_attempts)
+    ramesh.increment_login_attempts()
+    ramesh.increment_login_attempts()
+    ramesh.increment_login_attempts()
+    ramesh.increment_login_attempts()
+    ramesh.increment_login_attempts()
+    print(ramesh.login_attempts)
+
+    ramesh.login_reset()
+
+    print(ramesh.login_attempts)
