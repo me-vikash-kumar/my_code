@@ -1,5 +1,5 @@
 from user_class import user
-from Privileges import Privileges
+from CLASS.Privileges import Privileges
 
 class Administrator(user,Privileges):
     '''special case of user with extra privileges'''

@@ -1,4 +1,4 @@
-import printing_module as pm
+import input.printing_module as pm
 
 '''I want to check how module works'''
 

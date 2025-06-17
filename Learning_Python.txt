@@ -1,0 +1,13 @@
+In python you can learn about:
+syntax
+variable types
+type casting 
+concatenation 
+lists, tuples, dictionaries
+sets
+exception handling
+functions
+classes (OOP)
+modules
+import os
+os.system('python3 filename.py')
