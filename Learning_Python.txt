@@ -9,5 +9,9 @@ exception handling
 functions
 classes (OOP)
 modules
-import os
-os.system('python3 filename.py')
+-------------------------------------------
+In Python you can store data in variables.
+In Python you can perform arithmetic operations like addition and subtraction.
+In Python you can use loops to repeat actions.
+In Python you can define functions to organize your code.
+In Python you can read from and write to files.
